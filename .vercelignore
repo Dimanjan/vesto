@@ -2,3 +2,5 @@ server.js
 compress.js
 raw_images/
 node_modules/
+package.json
+package-lock.json
