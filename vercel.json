@@ -7,11 +7,5 @@
         { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/images/:match*",
-      "destination": "/imgs/:match*"
-    }
   ]
 }
