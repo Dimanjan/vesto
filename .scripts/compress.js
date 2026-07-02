@@ -3,7 +3,7 @@ const path = require('path');
 const sharp = require('sharp');
 
 const rawDir = path.join(__dirname, '../raw_images');
-const imgsDir = path.join(__dirname, '../images');
+const imgsDir = path.join(__dirname, '../public/images');
 
 // Create directories if they don't exist
 if (!fs.existsSync(rawDir)) fs.mkdirSync(rawDir);
