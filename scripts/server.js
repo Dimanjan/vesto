@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 
 // Serve static images from the 'images' directory
-app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/images', express.static(path.join(__dirname, '../images')));
 
 app.get('/', (req, res) => {
     res.send('VetosX Images Host is running. Access images at /images/<filename>');
