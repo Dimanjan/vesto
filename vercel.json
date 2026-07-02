@@ -1,15 +1,17 @@
 {
-  "version": 2,
-  "builds": [
+  "headers": [
     {
-      "src": "server.js",
-      "use": "@vercel/node"
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, OPTIONS" }
+      ]
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "server.js"
+      "source": "/images/:match*",
+      "destination": "/imgs/:match*"
     }
   ]
 }
